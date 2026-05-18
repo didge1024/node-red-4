@@ -96,9 +96,7 @@
         "x": 210,
         "y": 300,
         "wires": [
-            [
-                "7c681c51adff4691"
-            ]
+            []
         ]
     },
     {
@@ -109,7 +107,7 @@
         "bot": "9d156d3c3c4f5a59",
         "haserroroutput": true,
         "outputs": 2,
-        "x": 490,
+        "x": 610,
         "y": 300,
         "wires": [
             [],
