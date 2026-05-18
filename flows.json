@@ -16,7 +16,7 @@
         "ca": "",
         "certname": "mqtt_client.pem",
         "keyname": "mqtt_client.key",
-        "caname": "ca_mqtt.pem",
+        "caname": "ca.pem",
         "servername": "mqtt.lora.eagelcovewc.com",
         "verifyservercert": true,
         "alpnprotocol": ""
