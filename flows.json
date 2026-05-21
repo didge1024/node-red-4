@@ -81,16 +81,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "7547f5fc561dafcd",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "",
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "19e2d2b240aef5ab",
         "type": "ui_tab",
         "name": "Home",
