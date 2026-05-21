@@ -262,7 +262,7 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if(msg && msg.payload) {\n            let audio = new Audio(msg.payload.audio);\n            audio.play();\n        }\n    });\n})(scope);\n</script>",
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg && msg.payload && msg.payload.audio) {\n            var audio = new Audio(msg.payload.audio);\n            audio.play();\n        }\n    });\n})(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
