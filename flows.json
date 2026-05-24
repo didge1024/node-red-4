@@ -197,6 +197,11 @@
         "className": ""
     },
     {
+        "id": "abac3ceea1036eae",
+        "type": "chirpstack-server",
+        "server": "10.8.0.1:8080"
+    },
+    {
         "id": "2104df042ee64b5b",
         "type": "mqtt in",
         "z": "43d41dd086774f2c",
@@ -300,5 +305,22 @@
         "x": 600,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "7d8d892ad4eab996",
+        "type": "chirpstack-enqueue",
+        "z": "43d41dd086774f2c",
+        "name": "Relay Port",
+        "server": "abac3ceea1036eae",
+        "devEui": "48e663fffe30085a",
+        "applicationId": "",
+        "fPort": "",
+        "confirmed": true,
+        "debug": false,
+        "x": 490,
+        "y": 80,
+        "wires": [
+            []
+        ]
     }
 ]
