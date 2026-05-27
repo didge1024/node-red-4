@@ -219,7 +219,8 @@
         "wires": [
             [
                 "7c681c51adff4691",
-                "447b38bb2e47a6b4"
+                "447b38bb2e47a6b4",
+                "59ceb96cfba72abc"
             ]
         ]
     },
@@ -263,5 +264,23 @@
         "x": 450,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "59ceb96cfba72abc",
+        "type": "function",
+        "z": "43d41dd086774f2c",
+        "name": "function 1",
+        "func": "let msgText =\n`📡 Sensor Update\n\nField1: ${msg.payload.field1}\nField2: ${msg.payload.field2}\nField3: ${msg.payload.field3}\nField4: ${msg.payload.field4}\n\nTime: ${msg.payload.device_time}\nUnix: ${msg.payload.device_time_unix}`;\n\nmsg.payload = {\n    chatId: \"Hello\",\n    type: \"message\",\n    content: msgText\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 460,
+        "wires": [
+            []
+        ]
     }
 ]
