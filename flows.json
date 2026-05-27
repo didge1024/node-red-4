@@ -270,7 +270,7 @@
         "type": "function",
         "z": "43d41dd086774f2c",
         "name": "function 1",
-        "func": "let msgText =\n`📡 Sensor Update\n\nField1: ${msg.payload.field1}\nField2: ${msg.payload.field2}\nField3: ${msg.payload.field3}\nField4: ${msg.payload.field4}\n\nTime: ${msg.payload.device_time}\nUnix: ${msg.payload.device_time_unix}`;\n\nmsg.payload = {\n    chatId: \"Hello\",\n    type: \"message\",\n    content: msgText\n};\n\nreturn msg;",
+        "func": "let msgText =\n`📡 Sensor Update\n\nField1: ${msg.payload.field1}\nField2: ${msg.payload.field2}\nField3: ${msg.payload.field3}\nField4: ${msg.payload.field4}\n\nTime: ${msg.payload.device_time}\nUnix: ${msg.payload.device_time_unix}`;\n\nmsg.payload = {\n    chatId: \"5279605385\",\n    type: \"message\",\n    content: msgText\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
