@@ -214,12 +214,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 210,
-        "y": 300,
+        "x": 170,
+        "y": 320,
         "wires": [
             [
                 "7c681c51adff4691",
-                "898df793aec56c39"
+                "447b38bb2e47a6b4"
             ]
         ]
     },
@@ -249,78 +249,19 @@
         "wires": []
     },
     {
-        "id": "898df793aec56c39",
-        "type": "ui_template",
+        "id": "447b38bb2e47a6b4",
+        "type": "debug",
         "z": "43d41dd086774f2c",
-        "group": "d030580efdcfac72",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg && msg.payload && msg.payload.audio) {\n            var audio = new Audio(msg.payload.audio);\n            audio.play();\n        }\n    });\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 380,
-        "y": 180,
-        "wires": [
-            [
-                "a7d19f3b44be8f17"
-            ]
-        ]
-    },
-    {
-        "id": "a7d19f3b44be8f17",
-        "type": "function",
-        "z": "43d41dd086774f2c",
-        "name": "function 1",
-        "func": "msg.payload = {\n    audio: \"https://www.image2url.com/r2/default/audio/1779377841841-ccb17d54-0a93-4fd8-99cd-556dd744612f.mp3\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f0b45e361bf644e1",
-        "type": "e-mail",
-        "z": "43d41dd086774f2c",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "authtype": "BASIC",
-        "saslformat": true,
-        "token": "oauth2Response.access_token",
-        "secure": true,
-        "tls": true,
-        "name": "",
-        "dname": "IOT BOT Email",
-        "x": 600,
-        "y": 400,
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 380,
         "wires": []
-    },
-    {
-        "id": "7d8d892ad4eab996",
-        "type": "chirpstack-enqueue",
-        "z": "43d41dd086774f2c",
-        "name": "Relay Port",
-        "server": "abac3ceea1036eae",
-        "devEui": "48e663fffe30085a",
-        "applicationId": "",
-        "fPort": "",
-        "confirmed": true,
-        "debug": false,
-        "x": 490,
-        "y": 80,
-        "wires": [
-            []
-        ]
     }
 ]
