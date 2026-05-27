@@ -206,7 +206,7 @@
         "type": "mqtt in",
         "z": "43d41dd086774f2c",
         "name": "ECWC Infrastructure Meter",
-        "topic": "application/4240e563-c576-499b-b6e9-89b95e3c4236/device/+/event/up",
+        "topic": "application/944ee854-89d0-4b0b-9524-f3559ef9df52/device/+/event/up",
         "qos": "0",
         "datatype": "auto-detect",
         "broker": "b79a80b523e80429",
