@@ -270,7 +270,7 @@
         "type": "function",
         "z": "43d41dd086774f2c",
         "name": "function 1",
-        "func": "let msgText =\n`📡 Sensor Update\n\nField1: ${msg.payload.field1}\nField2: ${msg.payload.field2}\nField3: ${msg.payload.field3}\nField4: ${msg.payload.field4}\n\nTime: ${msg.payload.device_time}\nUnix: ${msg.payload.device_time_unix}`;\n\nmsg.payload = {\n    chatId: \"-5279605385\",\n    type: \"message\",\n    content: msgText\n};\n\nreturn msg;",
+        "func": "// Node-RED Function Node: Send Telegram Message\nconst chatId = \"-5279605385\";\nconst botToken = msg.payload.botToken || env.get(\"TELEGRAM_BOT_TOKEN\");\n\n// Build the message text\nconst text = `📡 *Device Report*\n\n🕐 *Time:* ${msg.payload.device_time || \"2026-05-27 15:31:50\"}\n🔢 *Unix Time:* ${msg.payload.device_time_unix || 1779895910}\n\n📊 *Sensor Data:*\n- Field 1: \\`${msg.payload.field1 ?? 2.8}\\`\n- Field 2: \\`${msg.payload.field2 ?? 48.3}\\`\n- Field 3: \\`${msg.payload.field3 ?? 22}\\`\n- Field 4: \\`${msg.payload.field4 ?? 300}\\``;\n\n// Construct the Telegram API URL\nmsg.url = `https://api.telegram.org/bot${botToken}/sendMessage`;\n\n// Set the HTTP request payload\nmsg.payload = {\n    chat_id: chatId,\n    text: text,\n    parse_mode: \"Markdown\"\n};\n\n// Set headers for the HTTP request node\nmsg.headers = {\n    \"Content-Type\": \"application/json\"\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
