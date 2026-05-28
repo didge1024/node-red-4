@@ -220,7 +220,7 @@
             [
                 "7c681c51adff4691",
                 "447b38bb2e47a6b4",
-                "59ceb96cfba72abc"
+                "fe3d86e0e22e57e3"
             ]
         ]
     },
@@ -266,27 +266,6 @@
         "wires": []
     },
     {
-        "id": "59ceb96cfba72abc",
-        "type": "function",
-        "z": "43d41dd086774f2c",
-        "d": true,
-        "name": "function 1",
-        "func": "var text = \"Field1: \" + msg.payload.field1 + \"\\n\" +\n    \"Field2: \" + msg.payload.field2 + \"\\n\" +\n    \"Field3: \" + msg.payload.field3 + \"\\n\" +\n    \"Field4: \" + msg.payload.field4 + \"\\n\" +\n    \"Time: \" + msg.payload.device_time;\n\nmsg.url = \"https://api.telegram.org/bot\" + env.get(\"TELEGRAM_BOT_TOKEN\") + \"/sendMessage\";\nmsg.payload = { chat_id: \"-5279605385\", text: text };\nmsg.headers = { \"Content-Type\": \"application/json\" };\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 460,
-        "wires": [
-            [
-                "f5a677c9f86b5be5"
-            ]
-        ]
-    },
-    {
         "id": "f5a677c9f86b5be5",
         "type": "debug",
         "z": "43d41dd086774f2c",
@@ -301,5 +280,25 @@
         "x": 580,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "fe3d86e0e22e57e3",
+        "type": "function",
+        "z": "43d41dd086774f2c",
+        "name": "function 2",
+        "func": "var text = \"Field1: \" + msg.payload.field1 + \"\\n\" +\n    \"Field2: \" + msg.payload.field2 + \"\\n\" +\n    \"Field3: \" + msg.payload.field3 + \"\\n\" +\n    \"Field4: \" + msg.payload.field4 + \"\\n\" +\n    \"Time: \" + msg.payload.device_time;\n\nmsg.url = \"https://api.telegram.org/bot\" + env.get(\"TELEGRAM_BOT_TOKEN\") + \"/sendMessage\";\nmsg.payload = { chat_id: \"-5279605385\", text: text };\nmsg.headers = { \"Content-Type\": \"application/json\" };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 440,
+        "wires": [
+            [
+                "f5a677c9f86b5be5"
+            ]
+        ]
     }
 ]
