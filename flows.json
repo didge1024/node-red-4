@@ -243,7 +243,7 @@
         "type": "comment",
         "z": "43d41dd086774f2c",
         "name": "Group 4 LoRaWAN Info",
-        "info": "## Group 4 - LoRaWAN Device Info\n\n**Application ID:** `944ee854-89d0-4b0b-9524-f3559ef9df52`\n**MQTT Topic:** `application/944ee854-89d0-4b0b-9524-f3559ef9df52/device/+/event/up`\n**Telegram Chat ID:** `-5279605385`\n**All-groups Chat ID:** `-5144508977`\n\n### Relay 4 (4 Channel Relay)\n- **DEV EUI:** `48E663FFFE301047`\n- **APP EUI:** `48FF000000001047`\n- **APP KEY:** `48D734E68536E3198A9387A7B06B455C`\n\n### TempHum4 (Temp & Humid Sensor)\n- **DEV EUI:** `48E663FFFE3010F6`\n- **APP EUI:** `48FF0000000010F6`\n- **APP KEY:** `E137F1340C0E6FFED8F7009CB900692C`\n\n---\n**Telegram for Windows:** [Download](https://telegram.org/dl/desktop/win)\n\n**AgroSense Sensor Manual:** [PDF](https://github.com/Makerfabs/Agrosense-Decoder/blob/main/Agrosense_Air_Temperature_Humidity_Sensor/AgroSense_Air%20Temperature%20and%20Humidity%20Sensor%20LoRaWAN%C2%AE%20Manual%20V1.2.pdf)\n\n**Telegram Web App:** [Open](https://web.telegram.org/k/)\n**Node-RED Telegram Docs:** [flows.nodered.org](https://flows.nodered.org/node/node-red-contrib-telegrambot)\n",
+        "info": "## Group 4 - LoRaWAN Device Info\n\n**Application ID:** `944ee854-89d0-4b0b-9524-f3559ef9df52`\n**MQTT Topic:** `application/944ee854-89d0-4b0b-9524-f3559ef9df52/device/+/event/up`\n**Telegram Chat ID:** `-5279605385`\n**All-groups Chat ID:** `-5144508977`\n\n### Relay 4 (4 Channel Relay)\n- **DEV EUI:** `48E663FFFE301047`\n- **APP EUI:** `48FF000000001047`\n- **APP KEY:** `48D734E68536E3198A9387A7B06B455C`\n\n### TempHum4 (Temp & Humid Sensor)\n- **DEV EUI:** `48E663FFFE3010F6`\n- **APP EUI:** `48FF0000000010F6`\n- **APP KEY:** `E137F1340C0E6FFED8F7009CB900692C`\n\n---\n**Telegram for Windows:** [Download](https://telegram.org/dl/desktop/win)\n\n**AgroSense Sensor Manual:** [PDF](https://github.com/Makerfabs/Agrosense-Decoder/blob/main/Agrosense_Air_Temperature_Humidity_Sensor/AgroSense_Air%20Temperature%20and%20Humidity%20Sensor%20LoRaWAN%C2%AE%20Manual%20V1.2.pdf)\n\n**Telegram Web App:** [Open](https://web.telegram.org/k/)\n**Node-RED Telegram Docs:** [flows.nodered.org](https://flows.nodered.org/node/node-red-contrib-telegrambot)\n\nhttps://t.me/+-OJnoNRNMmNkYTkx",
         "x": 210,
         "y": 80,
         "wires": []
@@ -300,5 +300,15 @@
                 "7c681c51adff4691"
             ]
         ]
+    },
+    {
+        "id": "d58e61c1f89ea425",
+        "type": "comment",
+        "z": "43d41dd086774f2c",
+        "name": "Group Link",
+        "info": "https://t.me/+-OJnoNRNMmNkYTkx",
+        "x": 480,
+        "y": 120,
+        "wires": []
     }
 ]
