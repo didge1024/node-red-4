@@ -285,7 +285,7 @@
         "type": "function",
         "z": "43d41dd086774f2c",
         "name": "function 2",
-        "func": "var text = \"Field1: \" + msg.payload.field1 + \"\\n\" + Object\n           \"Field2: \" + msg.payload.field2 + \"\\n\" +\n           \"Field3: \" + msg.payload.field3 + \"\\n\" +\n           \"Field4: \" + msg.payload.field4 + \"\\n\" +\n           \"Time: \"   + msg.payload.device_time;\n\nmsg.payload = {\n    type: \"message\",\n    chatId: -5279605385,\n    content: text\n};\n\nreturn msg;",
+        "func": "var text = \"Field1: \" + msg.payload.field1 + \"\\n\" + \n           \"Field2: \" + msg.payload.field2 + \"\\n\" + \n           \"Field3: \" + msg.payload.field3 + \"\\n\" +\n           \"Field4: \" + msg.payload.field4 + \"\\n\" +\n           \"Time: \"   + msg.payload.device_time;\n\nmsg.payload = {\n    type: \"message\",\n    chatId: -5279605385,\n    content: text\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
