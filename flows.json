@@ -315,7 +315,7 @@
         "id": "d13e37a06203a78b",
         "type": "inject",
         "z": "43d41dd086774f2c",
-        "name": "",
+        "name": "hi temp",
         "props": [
             {
                 "p": "payload"
@@ -326,7 +326,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"deduplicationId\":\"4e20cd05-6321-4b2f-be7b-f80bc152a2b3\",\"time\":\"2026-05-29T15:42:51.625586281+00:00\",\"deviceInfo\":{\"tenantId\":\"76bfe15e-38c3-47a4-b1de-d77d9ddff671\",\"tenantName\":\"STEM\",\"applicationId\":\"944ee854-89d0-4b0b-9524-f3559ef9df52\",\"applicationName\":\"group4\",\"deviceProfileId\":\"db7e8178-5e70-459e-b98d-b07f9a8556f7\",\"deviceProfileName\":\"MakerFab Agrosense_Air_Temperature_Humidity_Sensor\",\"deviceName\":\"TempHum4\",\"devEui\":\"48e663fffe3010f6\",\"deviceClassEnabled\":\"CLASS_A\",\"tags\":{}},\"devAddr\":\"00a6671c\",\"adr\":true,\"dr\":3,\"fCnt\":3203,\"fPort\":2,\"confirmed\":true,\"data\":\"C44cAlQA1AAEk+BqGbP2AA==\",\"object\":{\"field4\":300,\"field3\":21.2,\"device_time\":\"2026-05-29 15:42:46\",\"field1\":2.8,\"field2\":59.6,\"device_time_unix\":1780069366},\"rxInfo\":[{\"gatewayId\":\"ac1f09fffe1f6287\",\"uplinkId\":1914165332,\"nsTime\":\"2026-05-29T15:42:51.416896811+00:00\",\"rssi\":-41,\"snr\":14,\"location\":{\"source\":\"GPS\"},\"context\":\"b7wpGg==\"}],\"txInfo\":{\"frequency\":903900000,\"modulation\":{\"lora\":{\"bandwidth\":125000,\"spreadingFactor\":7,\"codeRate\":\"CR_4_5\"}}},\"regionConfigId\":\"us915_1\"}",
+        "payload": "{\"deduplicationId\":\"4e20cd05-6321-4b2f-be7b-f80bc152a2b3\",\"time\":\"2026-05-29T15:42:51.625586281+00:00\",\"deviceInfo\":{\"tenantId\":\"76bfe15e-38c3-47a4-b1de-d77d9ddff671\",\"tenantName\":\"STEM\",\"applicationId\":\"944ee854-89d0-4b0b-9524-f3559ef9df52\",\"applicationName\":\"group4\",\"deviceProfileId\":\"db7e8178-5e70-459e-b98d-b07f9a8556f7\",\"deviceProfileName\":\"MakerFab Agrosense_Air_Temperature_Humidity_Sensor\",\"deviceName\":\"TempHum4\",\"devEui\":\"48e663fffe3010f6\",\"deviceClassEnabled\":\"CLASS_A\",\"tags\":{}},\"devAddr\":\"00a6671c\",\"adr\":true,\"dr\":3,\"fCnt\":3203,\"fPort\":2,\"confirmed\":true,\"data\":\"C44cAlQA1AAEk+BqGbP2AA==\",\"object\":{\"field4\":300,\"field3\":67.2,\"device_time\":\"2026-05-29 15:42:46\",\"field1\":2.8,\"field2\":59.6,\"device_time_unix\":1780069366},\"rxInfo\":[{\"gatewayId\":\"ac1f09fffe1f6287\",\"uplinkId\":1914165332,\"nsTime\":\"2026-05-29T15:42:51.416896811+00:00\",\"rssi\":-41,\"snr\":14,\"location\":{\"source\":\"GPS\"},\"context\":\"b7wpGg==\"}],\"txInfo\":{\"frequency\":903900000,\"modulation\":{\"lora\":{\"bandwidth\":125000,\"spreadingFactor\":7,\"codeRate\":\"CR_4_5\"}}},\"regionConfigId\":\"us915_1\"}",
         "payloadType": "json",
         "x": 180,
         "y": 540,
