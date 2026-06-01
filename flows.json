@@ -285,7 +285,7 @@
         "type": "function",
         "z": "43d41dd086774f2c",
         "name": "function 2",
-        "func": "let temp = msg.payload.object.field3;\nlet conclusion = \"\";\n\n\n\nif (temp < 50) {\n    conclusion = \"Low Temperature 888\";\n} else if (temp > 60) {\n    conclusion = \"High Temperature\";\n} else {\n    conclusion = \"Normal Temperature\";\n    return;\n}\n\nvar text = \"Battery Voltage: \" + msg.payload.object.field1 + \"\\n\" + \n           \"Humidity: \" + msg.payload.object.field2 + \"\\n\" + \n           \"Celsius: \" + temp + \"\\n\" +\n           \"Conclusion: \" + conclusion + \"\\n\" +\n           \"Name: \" + msg.payload.deviceInfo.deviceName + \"\\n\" +\n           \"Time: \" + msg.payload.object.device_time;\n\nmsg.payload = {\n    type: \"message\",\n    chatId: -5279605385,\n    content: text\n};\n\nreturn msg;",
+        "func": "let temp = msg.payload.object.field3;\nlet conclusion = \"\";\n\n\n\nif (temp < 50) {\n    conclusion = \"Low Temperature\";\n} else if (temp > 60) {\n    conclusion = \"High Temperature\";\n} else {\n    conclusion = \"Normal Temperature\";\n    return;\n}\n\nvar text = \"Battery Voltage: \" + msg.payload.object.field1 + \"\\n\" + \n           \"Humidity: \" + msg.payload.object.field2 + \"\\n\" + \n           \"Celsius: \" + temp + \"\\n\" +\n           \"Conclusion: \" + conclusion + \"\\n\" +\n           \"Name: \" + msg.payload.deviceInfo.deviceName + \"\\n\" +\n           \"Time: \" + msg.payload.object.device_time;\n\nmsg.payload = {\n    type: \"message\",\n    chatId: -5279605385,\n    content: text\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -391,16 +391,45 @@
         "type": "chirpstack-enqueue",
         "z": "43d41dd086774f2c",
         "name": "",
-        "server": "",
-        "devEui": "48e663fffe301047",
+        "devEui": "",
         "applicationId": "",
         "fPort": 10,
         "confirmed": false,
         "debug": false,
-        "x": 600,
-        "y": 720,
+        "x": 750,
+        "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "9b83eac96873498e",
+        "type": "inject",
+        "z": "43d41dd086774f2c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "fPort",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "01",
+        "payloadType": "str",
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "2f9e80906e2859c5"
+            ]
         ]
     }
 ]
