@@ -285,7 +285,7 @@
         "type": "function",
         "z": "43d41dd086774f2c",
         "name": "function 2",
-        "func": "let temp = msg.payload.object.field3;\nlet conclusion = \"\";\n\nif (temp < 60) {\n    conclusion = \"Low Temperature\";\n} else {\n    conclusion = \"Normal Temperature\";\n}\n\nvar text = \"Battery Voltage: \" + msg.payload.object.field1 + \"\\n\" + \n           \"Humidity: \" + msg.payload.object.field2 + \"\\n\" + \n           \"Celsius: \" + temp + \"\\n\" +\n           \"Conclusion: \" + conclusion + \"\\n\" +\n           \"Name: \" + msg.payload.deviceInfo.deviceName + \"\\n\" +\n           \"Time: \" + msg.payload.object.device_time;\n\nmsg.payload = {\n    type: \"message\",\n    chatId: -5279605385,\n    content: text\n};\n\nreturn msg;",
+        "func": "let temp = msg.payload.object.field3;\nlet conclusion = \"\";\n\nif (temp < 60) {\n    conclusion = \"Low Temperature\";\n} else if (temp > 60) {\n    conclusion = \"High Temperature\";\n} else {\n    conclusion = \"Normal Temperature\";\n}\n\nvar text = \"Battery Voltage: \" + msg.payload.object.field1 + \"\\n\" + \n           \"Humidity: \" + msg.payload.object.field2 + \"\\n\" + \n           \"Celsius: \" + temp + \"\\n\" +\n           \"Conclusion: \" + conclusion + \"\\n\" +\n           \"Name: \" + msg.payload.deviceInfo.deviceName + \"\\n\" +\n           \"Time: \" + msg.payload.object.device_time;\n\nmsg.payload = {\n    type: \"message\",\n    chatId: -5279605385,\n    content: text\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
