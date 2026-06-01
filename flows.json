@@ -385,5 +385,21 @@
                 "fe3d86e0e22e57e3"
             ]
         ]
+    },
+    {
+        "id": "2f9e80906e2859c5",
+        "type": "chirpstack-enqueue",
+        "z": "43d41dd086774f2c",
+        "name": "",
+        "devEui": "",
+        "applicationId": "",
+        "fPort": 10,
+        "confirmed": false,
+        "debug": false,
+        "x": 640,
+        "y": 140,
+        "wires": [
+            []
+        ]
     }
 ]
