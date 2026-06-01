@@ -432,34 +432,5 @@
                 "2f9e80906e2859c5"
             ]
         ]
-    },
-    {
-        "id": "770d9d9f8a8ed0fc",
-        "type": "inject",
-        "z": "43d41dd086774f2c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 670,
-        "y": 100,
-        "wires": [
-            [
-                "2f9e80906e2859c5"
-            ]
-        ]
     }
 ]
