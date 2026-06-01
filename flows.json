@@ -391,13 +391,13 @@
         "type": "chirpstack-enqueue",
         "z": "43d41dd086774f2c",
         "name": "",
-        "server": "",
+        "server": "abac3ceea1036eae",
         "devEui": "",
         "applicationId": "",
         "fPort": 10,
         "confirmed": false,
         "debug": false,
-        "x": 750,
+        "x": 800,
         "y": 200,
         "wires": [
             []
@@ -425,7 +425,36 @@
         "topic": "",
         "payload": "01",
         "payloadType": "str",
-        "x": 580,
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "2f9e80906e2859c5"
+            ]
+        ]
+    },
+    {
+        "id": "770d9d9f8a8ed0fc",
+        "type": "inject",
+        "z": "43d41dd086774f2c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 670,
         "y": 100,
         "wires": [
             [
