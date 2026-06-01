@@ -391,13 +391,14 @@
         "type": "chirpstack-enqueue",
         "z": "43d41dd086774f2c",
         "name": "",
-        "devEui": "",
+        "server": "",
+        "devEui": "48e663fffe301047",
         "applicationId": "",
         "fPort": 10,
         "confirmed": false,
         "debug": false,
-        "x": 640,
-        "y": 140,
+        "x": 600,
+        "y": 720,
         "wires": [
             []
         ]
