@@ -391,6 +391,7 @@
         "type": "chirpstack-enqueue",
         "z": "43d41dd086774f2c",
         "name": "",
+        "server": "",
         "devEui": "",
         "applicationId": "",
         "fPort": 10,
