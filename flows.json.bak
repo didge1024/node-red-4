@@ -1,0 +1,297 @@
+[
+    {
+        "id": "43d41dd086774f2c",
+        "type": "tab",
+        "label": "4: Flow1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "43d1740e38cc6310",
+        "type": "tls-config",
+        "name": "mqtt.lora.eagelcovewc.com",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "mqtt_client.pem",
+        "keyname": "mqtt_client.key",
+        "caname": "ca.pem",
+        "servername": "mqtt.lora.eagelcovewc.com",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "9d156d3c3c4f5a59",
+        "type": "telegram bot",
+        "botname": "SJI IOT BOT",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "b79a80b523e80429",
+        "type": "mqtt-broker",
+        "name": "mqtt.lora.ecwc.com",
+        "broker": "mqtt.lora.eaglecovewc.com",
+        "port": "8883",
+        "tls": "43d1740e38cc6310",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7547f5fc561dafcd",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "19e2d2b240aef5ab",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b659e20a9228f0c2",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d030580efdcfac72",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "19e2d2b240aef5ab",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2104df042ee64b5b",
+        "type": "mqtt in",
+        "z": "43d41dd086774f2c",
+        "name": "ECWC Infrastructure Meter",
+        "topic": "application/4240e563-c576-499b-b6e9-89b95e3c4236/device/+/event/up",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b79a80b523e80429",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "7c681c51adff4691",
+                "898df793aec56c39"
+            ]
+        ]
+    },
+    {
+        "id": "7c681c51adff4691",
+        "type": "telegram sender",
+        "z": "43d41dd086774f2c",
+        "name": "Humidity Sender",
+        "bot": "9d156d3c3c4f5a59",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 610,
+        "y": 300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "eb91356db9e84897",
+        "type": "comment",
+        "z": "43d41dd086774f2c",
+        "name": "Group 4 LoRaWAN Info",
+        "info": "## Group 4 - LoRaWAN Device Info\n\n**Application ID:** `944ee854-89d0-4b0b-9524-f3559ef9df52`\n**MQTT Topic:** `application/944ee854-89d0-4b0b-9524-f3559ef9df52/device/+/event/up`\n**Telegram Chat ID:** `-5279605385`\n**All-groups Chat ID:** `-5144508977`\n\n### Relay 4 (4 Channel Relay)\n- **DEV EUI:** `48E663FFFE301047`\n- **APP EUI:** `48FF000000001047`\n- **APP KEY:** `48D734E68536E3198A9387A7B06B455C`\n\n### TempHum4 (Temp & Humid Sensor)\n- **DEV EUI:** `48E663FFFE3010F6`\n- **APP EUI:** `48FF0000000010F6`\n- **APP KEY:** `E137F1340C0E6FFED8F7009CB900692C`\n\n---\n**Telegram for Windows:** [Download](https://telegram.org/dl/desktop/win)\n\n**AgroSense Sensor Manual:** [PDF](https://github.com/Makerfabs/Agrosense-Decoder/blob/main/Agrosense_Air_Temperature_Humidity_Sensor/AgroSense_Air%20Temperature%20and%20Humidity%20Sensor%20LoRaWAN%C2%AE%20Manual%20V1.2.pdf)\n\n**Telegram Web App:** [Open](https://web.telegram.org/k/)\n**Node-RED Telegram Docs:** [flows.nodered.org](https://flows.nodered.org/node/node-red-contrib-telegrambot)\n",
+        "x": 210,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "898df793aec56c39",
+        "type": "ui_template",
+        "z": "43d41dd086774f2c",
+        "group": "d030580efdcfac72",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if (msg && msg.payload && msg.payload.audio) {\n            var audio = new Audio(msg.payload.audio);\n            audio.play();\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "a7d19f3b44be8f17"
+            ]
+        ]
+    },
+    {
+        "id": "a7d19f3b44be8f17",
+        "type": "function",
+        "z": "43d41dd086774f2c",
+        "name": "function 1",
+        "func": "msg.payload = {\n    audio: \"https://www.image2url.com/r2/default/audio/1779377841841-ccb17d54-0a93-4fd8-99cd-556dd744612f.mp3\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    }
+]
